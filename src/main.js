@@ -38,7 +38,9 @@ form.addEventListener('submit', event => {
             } else {
                 const markup = imagesTemplate(data.hits);
                 gallery.innerHTML = markup;
-                const lightbox = new Simplelightbox(".gallery a");
+                let lightbox = new Simplelightbox(".gallery a", {
+                    captionsData: "alt",
+                });
                 lightbox.refresh();
             }
         })

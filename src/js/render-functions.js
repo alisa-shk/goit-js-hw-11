@@ -1,7 +1,7 @@
 export function imageTemplate(image) {
     return `<li class="gallery-item">
-            <a class="gallery-link" href="">
-            <img class="gallery-image" width="360" src="${image.largeImageURL}" alt="${image.tags}"/>
+            <a class="gallery-link" href="${image.largeImageURL}">
+            <img class="gallery-image" width="360" src="${image.webformatURL}" alt="${image.tags}"/>
             </a>
             <ul class="captions">
             <li><strong>Likes</strong> ${image.likes}</li>
