@@ -97,6 +97,7 @@ button:focus {
 }
 
 .loader {
+  display: none;
   margin-left: 436px;
   color: #2E2F42;
   line-height: 1.5;
